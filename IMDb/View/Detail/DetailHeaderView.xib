@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIwtcGoudy-Bold.otf">
+            <string>OPTIwtcGoudy-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yqH-wD-C76" customClass="DetailHeaderView" customModule="IMDb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay7-Z7-Uw8">
+                    <rect key="frame" x="16" y="10" width="35" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="T4q-WT-xzr"/>
+                    </constraints>
+                    <state key="normal" image="icBack"/>
+                    <connections>
+                        <action selector="pushBack:" destination="yqH-wD-C76" eventType="touchUpInside" id="1b5-OJ-mb3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77P-UH-tQ0" customClass="UILabelResize" customModule="IMDb" customModuleProvider="target">
+                    <rect key="frame" x="67" y="21.333333333333329" width="292" height="27.666666666666671"/>
+                    <fontDescription key="fontDescription" name="OPTIwtcGoudy-Bold" family="OPTIwtcGoudy-Bold" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="G11-pL-6p4"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="77P-UH-tQ0" firstAttribute="centerY" secondItem="G11-pL-6p4" secondAttribute="centerY" id="35K-6j-6IC"/>
+                <constraint firstItem="G11-pL-6p4" firstAttribute="trailing" secondItem="77P-UH-tQ0" secondAttribute="trailing" constant="16" id="5BM-60-kFU"/>
+                <constraint firstItem="G11-pL-6p4" firstAttribute="bottom" secondItem="ay7-Z7-Uw8" secondAttribute="bottom" constant="10" id="H2c-6W-PIz"/>
+                <constraint firstItem="ay7-Z7-Uw8" firstAttribute="top" secondItem="G11-pL-6p4" secondAttribute="top" constant="10" id="Heq-Cy-bGT"/>
+                <constraint firstItem="ay7-Z7-Uw8" firstAttribute="leading" secondItem="G11-pL-6p4" secondAttribute="leading" constant="16" id="kYK-V1-9J6"/>
+                <constraint firstItem="77P-UH-tQ0" firstAttribute="leading" secondItem="ay7-Z7-Uw8" secondAttribute="trailing" constant="16" id="nzX-0e-gBc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="valueTitle" destination="77P-UH-tQ0" id="bdU-eD-xj1"/>
+            </connections>
+            <point key="canvasLocation" x="54.347826086956523" y="11.413043478260871"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBack" width="14.333333015441895" height="13"/>
+    </resources>
+</document>

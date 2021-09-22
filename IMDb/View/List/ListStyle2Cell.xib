@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIwtcGoudy-Bold.otf">
+            <string>OPTIwtcGoudy-Bold</string>
+        </array>
+        <array key="OPTIwtcGoudy-Regular.otf">
+            <string>OPTIwtcGoudy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="lkN-pD-HLh" customClass="ListStyle2Cell" customModule="IMDb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lkN-pD-HLh" id="Q9t-FJ-WFp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-We-bjz">
+                        <rect key="frame" x="16" y="8" width="343" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="sTU-M8-MEh">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HJl-q0-U8E"/>
+                                    <constraint firstAttribute="width" secondItem="sTU-M8-MEh" secondAttribute="height" multiplier="50:67" id="LEi-xP-ZNO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-i1-kIH" customClass="UILabelResize" customModule="IMDb" customModuleProvider="target">
+                                <rect key="frame" x="108" y="8.0000000000000018" width="227" height="19.666666666666671"/>
+                                <fontDescription key="fontDescription" name="OPTIwtcGoudy-Bold" family="OPTIwtcGoudy-Bold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Crew" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-EN-6uf" customClass="UILabelResize" customModule="IMDb" customModuleProvider="target">
+                                <rect key="frame" x="108" y="35.666666666666664" width="227" height="13.666666666666664"/>
+                                <fontDescription key="fontDescription" name="OPTIwtcGoudy-Regular" family="OPTIwtcGoudy-Regular" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icStar" translatesAutoresizingMaskIntoConstraints="NO" id="QYj-je-FeI">
+                                <rect key="frame" x="108" y="57.333333333333329" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="kkh-Du-tLD"/>
+                                    <constraint firstAttribute="width" constant="10" id="oUd-2I-vMk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-Zm-dPr" customClass="UILabelResize" customModule="IMDb" customModuleProvider="target">
+                                <rect key="frame" x="122" y="56.333333333333329" width="13" height="12.333333333333329"/>
+                                <fontDescription key="fontDescription" name="OPTIwtcGoudy-Regular" family="OPTIwtcGoudy-Regular" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-yY-l55" customClass="UILabelResize" customModule="IMDb" customModuleProvider="target">
+                                <rect key="frame" x="312.33333333333331" y="56.333333333333329" width="22.666666666666686" height="12.333333333333329"/>
+                                <fontDescription key="fontDescription" name="OPTIwtcGoudy-Regular" family="OPTIwtcGoudy-Regular" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sTU-M8-MEh" firstAttribute="top" secondItem="5IS-We-bjz" secondAttribute="top" id="5f6-mz-7qR"/>
+                            <constraint firstAttribute="bottom" secondItem="sTU-M8-MEh" secondAttribute="bottom" id="AuX-ct-1Z4"/>
+                            <constraint firstAttribute="trailing" secondItem="iXA-i1-kIH" secondAttribute="trailing" constant="8" id="B6y-V0-Koc"/>
+                            <constraint firstItem="dmb-EN-6uf" firstAttribute="leading" secondItem="sTU-M8-MEh" secondAttribute="trailing" constant="8" id="JjY-nm-UDr"/>
+                            <constraint firstItem="3ca-Zm-dPr" firstAttribute="centerY" secondItem="QYj-je-FeI" secondAttribute="centerY" id="Na4-Kl-rgd"/>
+                            <constraint firstAttribute="trailing" secondItem="dmb-EN-6uf" secondAttribute="trailing" constant="8" id="Pg1-5t-BO4"/>
+                            <constraint firstItem="sTU-M8-MEh" firstAttribute="leading" secondItem="5IS-We-bjz" secondAttribute="leading" id="RUc-Ze-v8A"/>
+                            <constraint firstItem="QYj-je-FeI" firstAttribute="leading" secondItem="sTU-M8-MEh" secondAttribute="trailing" constant="8" id="Zdc-uw-8RH"/>
+                            <constraint firstItem="QYj-je-FeI" firstAttribute="top" secondItem="dmb-EN-6uf" secondAttribute="bottom" constant="8" id="fEY-CK-sRl"/>
+                            <constraint firstItem="iXA-i1-kIH" firstAttribute="leading" secondItem="sTU-M8-MEh" secondAttribute="trailing" constant="8" id="lHa-Ip-YbZ"/>
+                            <constraint firstAttribute="trailing" secondItem="aEd-yY-l55" secondAttribute="trailing" constant="8" id="moX-To-IB4"/>
+                            <constraint firstItem="iXA-i1-kIH" firstAttribute="top" secondItem="5IS-We-bjz" secondAttribute="top" constant="8" id="ooW-hI-5Dt"/>
+                            <constraint firstItem="3ca-Zm-dPr" firstAttribute="leading" secondItem="QYj-je-FeI" secondAttribute="trailing" constant="4" id="pvS-NH-1AK"/>
+                            <constraint firstItem="dmb-EN-6uf" firstAttribute="top" secondItem="iXA-i1-kIH" secondAttribute="bottom" constant="8" id="zQ4-uD-qEa"/>
+                            <constraint firstItem="aEd-yY-l55" firstAttribute="centerY" secondItem="QYj-je-FeI" secondAttribute="centerY" id="zn9-eb-rz1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5IS-We-bjz" firstAttribute="top" secondItem="Q9t-FJ-WFp" secondAttribute="top" constant="8" id="2e1-SS-qVn"/>
+                    <constraint firstAttribute="trailing" secondItem="5IS-We-bjz" secondAttribute="trailing" constant="16" id="ILh-Hm-mhx"/>
+                    <constraint firstAttribute="bottom" secondItem="5IS-We-bjz" secondAttribute="bottom" constant="8" id="PMm-Zz-U7l"/>
+                    <constraint firstItem="5IS-We-bjz" firstAttribute="leading" secondItem="Q9t-FJ-WFp" secondAttribute="leading" constant="16" id="fqZ-WN-ZCD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="5IS-We-bjz" id="WWA-ok-41f"/>
+                <outlet property="imgMovie" destination="sTU-M8-MEh" id="P7q-Ca-lfV"/>
+                <outlet property="imgRating" destination="QYj-je-FeI" id="rnH-Df-10L"/>
+                <outlet property="nameMovie" destination="iXA-i1-kIH" id="U38-JF-1oI"/>
+                <outlet property="valueCrew" destination="dmb-EN-6uf" id="810-ms-msX"/>
+                <outlet property="valueRating" destination="3ca-Zm-dPr" id="eul-m4-guc"/>
+                <outlet property="valueYear" destination="aEd-yY-l55" id="aZU-lK-h7s"/>
+            </connections>
+            <point key="canvasLocation" x="255.79710144927537" y="-50.54347826086957"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Default" width="1024" height="1024"/>
+        <image name="icStar" width="640" height="608"/>
+    </resources>
+</document>
